@@ -1,4 +1,4 @@
-﻿namespace User.Web.Api.Users
+﻿namespace User.Web.Api.UsersDetails
 {
     public class UserDetails
     {
