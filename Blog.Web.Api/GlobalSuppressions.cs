@@ -5,5 +5,5 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Design", "CA1062:Validate arguments of public methods", Justification = "modelBuilder is not to be validated as null", Scope = "member", Target = "~M:User.Web.Api.Data.EntityConfigurations.UserEntityConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{User.Web.Api.Users.User})")]
-[assembly: SuppressMessage("Design", "CA1062:Validate arguments of public methods", Justification = "modelBuilder is not to be validated as null", Scope = "member", Target = "~M:User.Web.Api.Data.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)")]
+//[assembly: SuppressMessage("Design", "CA1062:Validate arguments of public methods", Justification = "modelBuilder is not to be validated as null", Scope = "member", Target = "~M:UserModel.Web.Api.Data.EntityConfigurations.UserEntityConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{UserModel.Web.Api.Users.UserModel})")]
+//[assembly: SuppressMessage("Design", "CA1062:Validate arguments of public methods", Justification = "modelBuilder is not to be validated as null", Scope = "member", Target = "~M:UserModel.Web.Api.Data.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)")]

@@ -14,7 +14,7 @@ namespace User.Web.Api.Users.RegisterUser
 
             // Validate request via FluentValidation
 
-            var user = new User
+            var user = new UserModel
             {
                 UserName = request.UserName,
                 NormalizedUserName = request.UserName.ToUpper(CultureInfo.InvariantCulture),
@@ -22,7 +22,7 @@ namespace User.Web.Api.Users.RegisterUser
                 Nickname = request.Nickname,
                 NormalizedEmail = request.Email.ToUpper(CultureInfo.InvariantCulture),
                 PasswordHash = passwordHasher.Hash(request.Password),
-                Role = "User",
+                Role = "UserModel",
             };
 
             await userRepository.AddAsync(user, cancellationToken).ConfigureAwait(false);

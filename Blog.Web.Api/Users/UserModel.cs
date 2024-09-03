@@ -1,6 +1,6 @@
 ﻿namespace User.Web.Api.Users
 {
-    public class User
+    public class UserModel
     {
         public Guid Id { get; set; }
         
