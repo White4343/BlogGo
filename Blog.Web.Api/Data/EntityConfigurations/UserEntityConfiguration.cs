@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace User.Web.Api.Data.EntityConfigurations
 {
-    public class UserEntityConfiguration : IEntityTypeConfiguration<Users.User>
+    public class UserEntityConfiguration : IEntityTypeConfiguration<Users.UserModel>
     {
-        public void Configure(EntityTypeBuilder<Users.User> builder)
+        public void Configure(EntityTypeBuilder<Users.UserModel> builder)
         {
+            ArgumentNullException.ThrowIfNull(builder);
+
             builder.ToTable("Users");
             builder.HasKey(u => u.Id);
 

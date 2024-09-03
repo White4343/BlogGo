@@ -9,10 +9,12 @@ namespace User.Web.Api.Data
         {
         }
         
-        public DbSet<Users.User>? Users { get; set; }
+        public DbSet<Users.UserModel>? Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            ArgumentNullException.ThrowIfNull(modelBuilder);
+
             modelBuilder.ApplyConfiguration(new UserEntityConfiguration());
         }
     }
